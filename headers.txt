@@ -1,0 +1,34 @@
+Request Headers
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*				(Request Header)
+Postman-Token: 3ba0e13c-9eb1-4b4e-b884-4b4b64f50109
+Host: www.googleapis.com		(Host Header)
+Accept-Encoding: gzip, deflate, br	(Request Header)
+Connection: keep-alive			(Shared General Header between request and response)
+
+
+
+Response Headers
+Content-Type: application/json; charset=UTF-8	(Entity Header)
+Vary: Origin				(Response Header)
+Vary: X-Origin				(Response Header)
+Vary: Referer				(Response Header)
+Content-Encoding: gzip			(Entity Header)
+Date: Mon, 31 Jan 2022 02:03:08 GMT	(Shared General Header between request and response)
+Server: ESF				(Response Header)
+Cache-Control: private			(Shared General Header between request and response)
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff		(Entity Header)
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked		between request and response
+
+
+
+Entity Headers provides meta-information about the content(aka Message Body or entity), Content-Encoding, X-Content-Type and Content-Encoding are enity headers.
+
+Host header is mandatory for HTTP/1.1 clients. "Host: www.googleapis.com" is a host header and "Connection: keep-alive" is a shared general header between request and response.
+
+Request headers accept pre-fixed headers which indicate the acceptable media-types, languages and characters sets on the client. For example, from Host, Referar and USer-Agent identify details about the client that indicate that initiated the request. "Accept: */*" is a request header.
+
+Response Headers are similar to request message, except for the status line and headers. "Vary, Server" etc are response headers.
